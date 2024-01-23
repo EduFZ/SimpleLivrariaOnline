@@ -25,6 +25,8 @@ public class CarrinhoDeCompras {
                 '}';
     }
 
-
+//    public double calcularTotal(CarrinhoDeCompras carrinhoDeCompras) {
+//
+//    }
 
 }
