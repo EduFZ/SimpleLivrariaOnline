@@ -25,8 +25,18 @@ public class CarrinhoDeCompras {
                 '}';
     }
 
-//    public double calcularTotal(CarrinhoDeCompras carrinhoDeCompras) {
-//
-//    }
+    public double calcularTotal(ArrayList<Livro> carrinhoDeCompras) {
+        double totalValue = 0;
+
+        for (Livro livro : livros) {
+            totalValue += livro.getPreco();
+
+            if (livro instanceof LivroFisico) {
+                totalValue += ((LivroFisico) livro).getFrete();
+            }
+
+        }
+        return totalValue;
+    }
 
 }
